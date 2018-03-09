@@ -1,0 +1,125 @@
+body{
+	font-family: 'Heebo', sans-serif;
+	background-color: black;
+	height: 2000px;
+}
+a{
+	position: relative;
+	color: white;
+}
+
+
+iframe{
+	z-index: 1;
+}
+h1{
+	font-size: 27px;
+	z-index: 2;
+	color: white;
+	margin-left: 15px;
+	margin-right: 190px;
+}
+
+h1 a {
+	text-decoration: none;
+}
+
+h1 #works{
+	font-style: italic;
+}
+
+h1 #about{
+	text-decoration: underline;
+}
+
+#about img {
+	display: none;
+	position: fixed;
+	top: 200px;
+	right: 50px;
+	z-index: -1;
+	width: 300px;
+}
+
+#about:hover img {
+	display: block;
+}
+
+#works img {
+	display: none;
+	position: fixed;
+	top: 20%;
+	left: 40%;
+	z-index: -1;
+	width: 500px;
+	transform: rotate(90deg);
+}
+
+#works:hover img {
+	display: block;
+}
+
+#borders video {
+	display: none;
+	position: fixed;
+	top: 20%;
+	left: 40%;
+	z-index: -1;
+}
+
+#borders:hover video {
+	display: block;
+}
+
+#from video {
+	display: none;
+	position: fixed;
+	top: 20%;
+	left: 40%;
+	z-index: -1;
+	transform: rotate(270deg);
+}
+
+#from:hover video {
+	display: block;
+}
+
+header {
+  padding: 20px ;
+  background-color: black;
+}
+
+
+li{
+	display: inline;
+	padding: 10px;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header li {
+  padding: 0 20px;
+  margin: 0;
+}
+
+li a {
+	text-decoration: none;
+}
+
+#projects{
+	font-size: 50px;
+}
