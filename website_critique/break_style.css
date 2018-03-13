@@ -1,0 +1,80 @@
+header {
+  background: pink;
+  padding: 50px;
+  color: #fff;
+  font-size: 50px;
+  text-align: center; 
+}
+
+nav {
+  background: rgb(255, 102, 153);
+  padding: 5px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+article {
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  background: rgb(255, 102, 102);
+}
+
+footer {
+  padding: 20px;
+  background: #f1f1f1;
+  position: absolute;
+  top: 2850px;
+  width: 1500px;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+header, article, a, footer {
+  font-family: 'Open Sans', sans-serif;
+}
+
+div {
+	background-color: white;
+	display: inline;
+	position: absolute;
+	left: 150px;
+	top:314px;
+	width: 1000px;
+	height:2000px;
+	height: auto
+	z-index: 2;
+}
+
+
+img {
+	position: relative;
+	width: 900px;
+	z-index: 1;
+	float: center;
+	margin-right: 20px;
+  padding: 10px;
+  border-style: solid;
+  border-color:pink;
+}
+
+
+
+
+

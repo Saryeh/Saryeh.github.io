@@ -1,0 +1,178 @@
+html {
+background-color: black;
+}
+
+body{
+	font-family: 'Bungee', sans-serif;
+}
+.pngfile {
+	width: 900px;
+	position: absolute;
+	top: 380px;
+	left: 150px;
+	z-index: 1;
+}
+
+#body1 {
+	position: absolute;
+	bottom: 10px;
+	left: 120px;
+}
+
+#body2 {
+	position: absolute;
+	bottom: 55px;
+	left: 257px;
+}
+
+#body3 {
+	position: absolute;
+	bottom: 55px;
+	left: 450px;
+}
+
+.block {
+	width: 89px;
+	height: 94px;
+	background-color: rgb(51, 204, 204);
+	position: absolute;
+	z-index: 4;
+}
+
+.blockPos1{
+	bottom: 140px;
+	left: 440px;
+}
+
+.blockPos2{
+	bottom: 179px;
+	left: 570px;
+}
+
+.blockPos3{
+	bottom: 180px;
+	left: 770px;
+}
+
+
+#body:hover {
+	bottom: 30px;
+	left: 100px;
+}
+
+.torso {
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0px;
+	width: 30px;
+  position: absolute;
+  bottom:130px;
+  left: 320px;
+  transform: rotate(180deg);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 2;
+ }
+ 
+.head {
+	width: 40px;
+	height: 40px;
+	background: grey;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  position: absolute;
+  bottom: 178px;
+  left: 340px;
+  z-index: 3;
+}
+
+.speech {
+	width: 200px;
+	height: 100px;
+	background: white;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+
+
+.tri {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid white;
+}
+
+#t1 {
+position: absolute;
+top: 60px;
+left: 140px;
+background-color: transparent;
+transform: rotate(32deg);
+}
+
+#text1{
+	position: absolute;
+	top: 38%;
+	left: 22%;
+}
+
+#t2 {
+position: absolute;
+top: 50px;
+left: 20px;
+background-color: transparent;
+transform: rotate(87deg);
+}
+
+#text2{
+	position: absolute;
+	top: 39%;
+	left: 35%;
+}
+
+
+#t3 {
+	position: absolute;
+	top: 60px;
+	left: 2px;
+	background-color: transparent;
+	transform: rotate(460deg);
+}
+
+#text3{
+	position: absolute;
+	top: 39%;
+	left: 35%;
+}
+
+.arrow{
+	position: absolute;
+	border: solid transparent;
+	border-width: 0 0 35px 35px;
+	transition: .24s;
+	top: 190px;
+	left: 40px;
+	padding: 50px;
+	box-shadow: 1px -1px 0 0px plum inset;
+	transform: rotate(45deg);
+}
+
+a:nth-child(2) {
+	margin-left: 1040px;
+}
+
+.arrow:hover {
+ box-shadow: 2px -2px 0 0px lavender inset;
+}
+
+.next {
+	transform: rotate(225deg);
+}
+
+
+
+

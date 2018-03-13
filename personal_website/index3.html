@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Park</title>
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <link href="style3.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+<a class="arrow" href="active_index 2.html" title="previous"></a>
+<a class="arrow next" href="emotions_index.html" title="next"></a>
+
+  	<img src="puddle.png" class="pngfile">
+  	<div class="person body" id="body1">
+	    <div class="person torso" id="torso1"></div>
+	    <div class="person head" id="head1"></div>
+    </div>
+    <div class="person body" id="body2">
+	    <div class="person torso" id="torso2"></div>
+	    <div class="person head" id="head2"></div>
+    </div>
+    <div class="person body" id="body3">
+	    <div class="person torso" id="torso3"></div>
+	    <div class="person head" id="head3"></div>
+    </div>
+    <div class="block blockPos1" id='b1'></div>
+    <div class="block blockPos2" id='b2'></div>
+    <div class="block blockPos3" id='b3'></div>
+  
+
+    <script>
+
+        var b1 = document.getElementById('b1');
+
+        b1.addEventListener('mouseover', move1);
+
+        function move1(){
+            var body1 = document.getElementById('body1');
+            body1.style.bottom = '90px';
+            body1.style.transition = 'bottom 2s';
+
+            var speechshape1 = document.getElementById('speechshape1');
+            speechshape1.style.opacity = "1";
+            speechshape1.style.transition = "opacity 3s";
+
+            var audio = new Audio('sound3.m4a');
+            audio.play();
+        }
+
+        var b2 = document.getElementById('b2');
+
+        b2.addEventListener('mouseover', move2);
+
+        function move2(){
+            var body2 = document.getElementById('body2');
+            body2.style.bottom = '110px';
+            body2.style.transition = 'bottom 2s';
+
+
+            var speechshape2 = document.getElementById('speechshape2');
+            speechshape2.style.opacity = "1";
+            speechshape2.style.transition = "opacity 3s";
+
+            var audio = new Audio('sound1.m4a');
+            audio.play();
+
+        }
+
+        var b3 = document.getElementById('b3');
+
+        b3.addEventListener('mouseover', move3);
+
+        function move3(){
+            var body3 = document.getElementById('body3');
+            body3.style.bottom = '120px';
+            body3.style.transition = 'bottom 2s'
+
+            var speechshape3 = document.getElementById('speechshape3');
+            speechshape3.style.opacity = "1";
+            speechshape3.style.transition = "opacity 3s";
+
+            var audio = new Audio('sound2.m4a');
+            audio.play();
+        }
+    	
+    </script>
+</body>
+</html>

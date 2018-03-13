@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="emotions_style.css">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300" rel="stylesheet">
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+<script src="/scripts/tap-gesture.js"></script>
+   
+<body class="flex-column center-center">  
+
+ <a class="arrow" href="index3.html" title="previous"></a>
+<a class="arrow next" href="active_index 2.html" title="next"></a>
+
+    <header>On a Day to Day Basis</header>
+    <img class="square center-center" src="brain.png">
+</body>  
+
+<script>
+  // Get a reference to an element
+var square = document.querySelector('.square');
+
+// Create a manager to manager the element
+var manager = new Hammer.Manager(square);
+
+// Create a recognizer
+var Swipe = new Hammer.Swipe();
+
+// Add the recognizer to the manager
+manager.add(Swipe);
+
+// Declare global variables to swiped correct distance
+var deltaX = 0;
+var deltaY = 0;
+
+// Subscribe to a desired event
+manager.on('swipe', function(e) {
+  deltaX = deltaX + e.deltaX;
+  var direction = e.offsetDirection;
+  var translate3d = 'translate3d(' + deltaX + 'px, 0, 0)';
+  
+  if (direction === 4 || direction === 2) {
+    e.target.innerText = deltaX;
+    e.target.style.transform = translate3d;
+  }
+});
+
+  </script>
+
+</body>
+</html>
+
+

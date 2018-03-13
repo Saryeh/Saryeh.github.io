@@ -1,0 +1,71 @@
+html, body {
+  height: 100%;
+  font-family: 'Heebo', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #FFF;
+  margin: 0;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 130px;
+  height: 110px;
+  margin: 30px;
+  background-color: #black;
+  transition: transform 300ms ease-out;
+}
+
+img{
+	width: 100px;
+}
+
+.arrow{
+	position: absolute;
+	border: solid transparent;
+	border-width: 0 0 35px 35px;
+	transition: .24s;
+	top: 190px;
+	left: 40px;
+	padding: 50px;
+	box-shadow: 1px -1px 0 0px plum inset;
+	transform: rotate(45deg);
+}
+
+a:nth-child(2) {
+	margin-left: 1040px;
+}
+
+.arrow:hover {
+ box-shadow: 2px -2px 0 0px lavender inset;
+}
+
+.next {
+	transform: rotate(225deg);
+}
+ 
+
+
+
+  
+ 
+ 
+
+ 
+
+
+  
+ 
+ 
