@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Input/Output</title>
+</head>
+<body>
+
+<p>Hi! What is your name?</p>
+<input type="text" id="your_name" />
+<p>Hi! What is your favorite color?</p>
+<input type="text" id="fav_color" />
+<button id="submit">Go</button>
+<p id="colors"></p>
+<p id="greeting"></p>
+
+
+<script>
+
+document.getElementById("submit").addEventListener("click", function() {
+	var your_name = document.getElementById("your_name").value;
+	var greeting = document.getElementById("greeting");
+	var fav_color = document.getElementById("fav_color").value;
+  var colors = document.getElementById("colors");
+  if(your_name.toLowerCase() == "justin") {
+    var greeting_1 = "<strong>My name is justin too!</strong>";
+    greeting.style.color = "grey";
+  } else if (your_name == 'jason') {
+    var greeting_1 = "My brother's name is Jason!";
+    greeting.style.color = "pink";
+  } else {
+    var greeting_1 = "Hi" +  your_name + "!";
+    greeting.style.color = "orange";
+  }
+
+  if(fav_color.toLowerCase() == "red") {
+    var greeting_2 = "<strong>My fav color is red too!</strong>";
+      colors.style.color = "red";
+  } else if(fav_color == "blue") {
+    var greeting_2 = "I dont like blue";
+      colors.style.color = "blue";
+  } else {
+    var greeting_2 = "Thats nice";
+    colors.style.color = "green";
+  }
+
+  greeting.innerHTML = greeting_1;
+  colors.innerHTML = greeting_2;
+});
+
+</script>
+
+
+</body>
+</html>
