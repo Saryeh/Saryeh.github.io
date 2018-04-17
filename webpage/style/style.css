@@ -1,0 +1,131 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-family: Wavehaus;
+	font-size: 230px;
+	display: inline; 
+}
+
+#R {
+	
+}
+
+#evive {
+	position: relative;
+	left: 75px;
+}
+
+#opening {
+	position: relative;
+	left: -70px;
+	top: -80px;
+	}
+
+#wrapper{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#arrow{
+	position: absolute;
+	top: 600px;
+	left: 100px;
+}
+
+.arrow {
+	position: absolute;
+	border: solid transparent;
+	border-width: 0 0 35px 35px;
+	transition: .24s;
+	padding: 28px;
+	box-shadow: 1px -1px 0 1px plum inset;
+	transform: rotate(45deg);
+}
+
+.arrow:hover {
+	box-shadow: 2px -2px 0 2px lavender inset;
+}
+
+.next {
+	transform: rotate(225deg);
+}
+
+#leftarrow{
+   position: absolute;
+   top: 450px;
+   left: -100px;
+}
+
+#rightarrow{
+   position: absolute;
+   top: 450px;
+   right: 220px;
+}
+
+a:nth-child(2){
+	margin-left: 300px;
+}
+
+.tag{
+  width: 93px;
+  position: absolute;
+  top: 230px;
+  left: 420px;
+}
+
+#string{
+	position: absolute;
+	width: 150px;
+	top: 105px;
+	left: 469px;
+}
+
+#hole{
+     width: 440px;
+     position: absolute;
+     top: 500px;
+     left: 400px;	
+}
+
+#tag{
+	width: 120px;
+	position:absolute;
+	top: 450px;
+	left: 550px;
+	opacity: 0;
+	transition: top 2s ease-out, opacity 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
