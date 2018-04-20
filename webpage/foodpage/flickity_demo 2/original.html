@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="flickity.css" media="screen">
+
+    <style>
+
+      * { 
+        box-sizing: border-box; 
+      }
+
+      .carousel {
+        background: #FAFAFA;
+      }
+
+      .carousel-cell {
+        width: 66%;
+        height: 400px;
+        margin-right: 10px;
+        background: fuchsia;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+      }
+    
+    </style>
+
+  </head>
+  <body>
+
+    <div class="carousel">
+      <div class="carousel-cell"></div>
+      <div class="carousel-cell"></div>
+      <div class="carousel-cell"></div>
+      <div class="carousel-cell"></div>
+      <div class="carousel-cell"></div>
+    </div>
+
+    <script src='jquery.min.js'></script>
+    <script src="flickity.pkgd.min.js"></script>
+    <script src='main.js'></script>
+
+  </body>
+</html>

@@ -1,12 +1,30 @@
 body {
 	margin: 0;
 	padding: 0;
+	 color: #f00;
+	 background-color: black;
+	 animation-name: backdrop;
+	 animation-duration: 4s;
+	 animation-timing-function: ease-in;
+	 animation-delay: 0.5s;
+	 animation-fill-mode: forwards; 
+}
+
+@keyframes backdrop  {
+	0% {background-color: black;}
+	100% {background-color: white;}
 }
 
 h1{
 	font-family: Wavehaus;
 	font-size: 230px;
 	display: inline; 
+	color: white;
+	animation-name: revive;
+	 animation-duration: 4s;
+	 animation-timing-function: ease-in;
+	 animation-delay: 0.5s;
+	 animation-fill-mode: forwards; 
 }
 
 #R {
@@ -18,11 +36,31 @@ h1{
 	left: 75px;
 }
 
+#stuff {
+     filter: invert(100%);
+   	 animation-name: icon;
+	 animation-duration: 4s;
+	 animation-timing-function: ease-in;
+	 animation-delay: 0.5s;
+	 animation-fill-mode: forwards; 
+}
+
+@keyframes icon{
+	0% {filter: invert(100%);}
+	100% {filter: invert(0%);}
+}
+
 #opening {
 	position: relative;
 	left: -70px;
 	top: -80px;
-	}
+}
+
+@keyframes revive{
+	0% {color: white;}
+	100% {color: black;}	
+}
+
 
 #wrapper{
 	width: 100vw;
